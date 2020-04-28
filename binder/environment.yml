@@ -21,7 +21,7 @@ dependencies:
   - bioconda::bcftools=1.10.2
   - bioconda::ncbi-acc-download=0.2.6
   - bioconda::ncbi-genome-download=0.2.12
-  - quast=5.0.2
-  - spades=3.14.0
-  - prokka=1.13.4
-  - sra-tools=2.10.3
+  - bioconda::quast=5.0.2
+  - bioconda::spades=3.14.0
+  - bioconda::prokka=1.13.4
+  - bioconda::sra-tools=2.10.3

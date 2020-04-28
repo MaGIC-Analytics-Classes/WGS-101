@@ -9,5 +9,5 @@ mkdir raw_align && cd raw_align \
 && ncbi-acc-download --format fasta NZ_CP017669.1 && cd ..
 fastq-dump --split-files --gzip --outdir ./raw_align/ SAMN12261986 
 
-mkdir raw
+mkdir raw_denovo
 fastq-dump --split-files --gzip --outdir ./raw_denovo/ SAMN04216069
