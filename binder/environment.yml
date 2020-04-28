@@ -1,4 +1,4 @@
-name: ngs-class
+name: wgs
 channels:
   - conda-forge
   - bioconda
@@ -11,3 +11,16 @@ dependencies:
   - numpy=1.18.1
   - ipython=7.13.0
   - pandas=1.0.3
+  - bioconda::fastqc=0.11.8
+  - bioconda::multiqc=1.8
+  - bioconda::samtools=1.10
+  - bioconda::bwa=0.7.17
+  - bioconda::trimmomatic=0.39
+  - bioconda::bedtools=2.29.2
+  - bioconda::bcftools=1.10.2
+  - bioconda::ncbi-acc-download=0.2.6
+  - bioconda::ncbi-genome-download=0.2.12
+  - quast=5.0.2
+  - spades=3.14.0
+  - prokka=1.13.4
+  - sra-tools=2.10.3

@@ -3,3 +3,11 @@ jupyter labextension install @jupyter-widgets/jupyterlab-manager@1.1 --no-build
 jupyter labextension install jupyterlab-plotly@4.6.0 --no-build
 jupyter labextension install plotlywidget@4.6.0 --no-build
 jupyter lab build
+
+mkdir raw_align && cd raw_align \
+&& curl -O -J -L https://osf.io/v24pt/download \
+&& ncbi-acc-download --format fasta NZ_CP017669.1 && cd ..
+fastq-dump --split-files --gzip --outdir ./raw_align/ SAMN12261986 
+
+mkdir raw
+fastq-dump --split-files --gzip --outdir ./raw_denovo/ SAMN04216069
