@@ -7,7 +7,7 @@ jupyter lab build
 mkdir raw_align && cd raw_align \
 && curl -O -J -L https://osf.io/v24pt/download \
 && ncbi-acc-download --format fasta NZ_CP017669.1 && cd ..
-fastq-dump --split-files --gzip --outdir ./raw_align/ SAMN12261986 
+fastq-dump --split-files --gzip --outdir ./raw_align/ SAMN09914146 
 
 mkdir raw_denovo
 fastq-dump --split-files --gzip --outdir ./raw_denovo/ SAMN04216069
